@@ -6,6 +6,7 @@ include_directories(
 )
 
 shared_lib(bjson
+    bjson_value.cpp
     dump.cpp
     duplicate.cpp
     filter.cpp
@@ -14,13 +15,11 @@ shared_lib(bjson
     json_printer.cpp
     json_reader.cpp
     json_spirit_helper.cpp
-    json_spirit_value.cpp
     json_string_template.cpp
     json_writer.cpp
     load.cpp
     number_to_value.cpp
     update.cpp
-    value_lesser.cpp
     yajl_gen_value.cpp
 )
 

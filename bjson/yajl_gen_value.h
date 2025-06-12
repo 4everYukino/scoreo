@@ -1,15 +1,20 @@
 #ifndef YAJL_GEN_VALUE_H
 #define YAJL_GEN_VALUE_H
 
-#include "json_spirit_export.h"
-#include "json_spirit_value.h"
+#include "bjson_export.h"
+#include "bjson_value.h"
 
-#include <yajl_gen.h>
+#include <yajl/yajl_gen.h>
 
-extern "C" JSON_SPIRIT_Export
+void gen_map(yajl_gen g, const bjson::Value& val);
 
-yajl_gen_status yajl_gen_value(yajl_gen g, const json_spirit::Value& val);
+void gen_array(yajl_gen g, const bjson::Value& val);
+
+void gen_string(yajl_gen g, const bjson::Value& val);
+
+void gen_int(yajl_gen g, const bjson::Value& val);
+
+extern "C" BJSON_EXPORT yajl_gen_status
+    yajl_gen_value(yajl_gen g, const bjson::Value& val);
 
 #endif
-
-// vim: set et ts=4 sts=4 sw=4:

@@ -14,7 +14,7 @@ AccessModifierOffset: -4
 AllowAllConstructorInitializersOnNextLine: false
 AllowAllParametersOfDeclarationOnNextLine: false
 # AllowShortBlocksOnASingleLine: Never
-AllowShortCaseLabelsOnASingleLine: true
+AllowShortCaseLabelsOnASingleLine: false
 AllowShortFunctionsOnASingleLine: None
 # AllowShortLambdasOnASingleLine: All
 # AllowShortIfStatementsOnASingleLine: WithoutElse
@@ -51,7 +51,7 @@ BreakBeforeBraces: Custom
 # BreakConstructorInitializers: BeforeColon
 # BreakAfterJavaFieldAnnotations: false
 # BreakStringLiterals: true
-# ColumnLimit: 80
+ColumnLimit: 100
 CommentPragmas: "^ NOLINT:"
 # CompactNamespaces: false
 # ConstructorInitializerAllOnOneLineOrOnePerLine: true
@@ -83,7 +83,7 @@ FixNamespaceComments: false
 #     SortPriority: 0
 # IncludeIsMainRegex: "([-_](test|unittest))?$"
 # IncludeIsMainSourceRegex: ""
-# IndentCaseLabels: true
+IndentCaseLabels: true
 # IndentGotoLabels: true
 # IndentPPDirectives: None
 IndentWidth: 4
